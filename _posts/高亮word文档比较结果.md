@@ -14,11 +14,10 @@
 再粘贴下面的代码
 >Sub tracked_to_highlighted()           
     tempState = ActiveDocument.TrackRevisions
-    ActiveDocument.TrackRevisions = False    
-    For Each Change In ActiveDocument.Revisions        
+    ActiveDocument.TrackRevisions = Flase    
+    For Each Change In ActiveDocument.Revisions
         Set myRange = Change.Range
-        myRange.Revisions.AcceptAll
-        myRange.HighlightColorIndex = wdGreen            
+        myRange.HighlightColorIndex = wdYellow           
     Next    
     ActiveDocument.TrackRevisions = tempState
 End Sub
