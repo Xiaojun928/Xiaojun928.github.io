@@ -11,8 +11,9 @@
 ### 2. 高亮差异部分
 
 点击 开发工具(developer)-> Visual Basic -> 右键点击project -> 插入(insert) -> 模块(module)
-再粘贴下面的代码
->Sub tracked_to_highlighted()           
+再粘贴下面的代码:
+```
+Sub tracked_to_highlighted()           
     tempState = ActiveDocument.TrackRevisions
     ActiveDocument.TrackRevisions = Flase    
     For Each Change In ActiveDocument.Revisions
@@ -21,11 +22,12 @@
     Next    
     ActiveDocument.TrackRevisions = tempState
 End Sub
+```
 
 你将看到
 [![NFQVrF.png](https://s1.ax1x.com/2020/06/16/NFQVrF.png)](https://imgchr.com/i/NFQVrF)
 
-然后运行一下这个模块即可.
+然后运行一下这个模块即可. **ps**截图代码有误，VB脚本请用上面可复制的
 
 
 #
