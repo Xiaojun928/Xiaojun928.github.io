@@ -31,11 +31,14 @@ End Sub
 
 
 #
-PS. 该方法对于bibliography部分会报错
+PS1. 该方法对于bibliography部分会报错
 >Run time error '5825'.
 Objects have been deleted.
 
 可以先忽略bibliography部分的高亮，重新添加一次reference即可
+
+
+PS2. word文档比较还有一个bug是：某些本来只是部分被修改但并未被完全删除的段落会被识别为整段删除后新加一段，这种情况暂时没找到解决方案，需手动处理T-T
 
 ### Ref:
 https://cybertext.wordpress.com/2018/11/22/word-apply-a-highlight-to-all-tracked-changes/
