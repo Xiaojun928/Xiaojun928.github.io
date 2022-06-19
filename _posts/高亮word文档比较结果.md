@@ -39,6 +39,7 @@ Objects have been deleted.
 
 
 PS2. word文档比较还有一个bug是：某些本来只是部分被修改但并未被完全删除的段落会被识别为整段删除后新加一段，这种情况暂时没找到解决方案，需手动处理T-T
+**解决办法**在比较时选择更多，在‘比较设置’那里除了‘插入和删除’，其他都不勾选，即可避免整段被识别为改动的部分。
 
 ### Ref:
 https://cybertext.wordpress.com/2018/11/22/word-apply-a-highlight-to-all-tracked-changes/
